@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'node:current-alpine3.20' }
+        }
     stages {
         stage('install') {
             steps {
