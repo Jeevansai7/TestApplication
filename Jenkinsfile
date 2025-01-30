@@ -1,13 +1,14 @@
 pipeline {
     agent any
-
     stages {
-        stage('setup') {
+        stage('build') {
             steps {
-                echo "hey test"
-                echo "${currentBuild.currentResult}"
-
-
+                sh "npm run build"
+            }
+        }
+        stage('test') {
+            steps {
+                sh "npm run test"
             }
         }
     }
