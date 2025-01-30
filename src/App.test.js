@@ -6,7 +6,7 @@ describe("testing",()=>{
 
     // render(<App />);
     // const linkElement = screen.getByText(/learn react/i);
-    expect(true===false)
+    expect(false).toBe(true)
   });
 
   test('test1 learn react link', () => {
