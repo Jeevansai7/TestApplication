@@ -8,14 +8,14 @@ pipeline {
                 sh 'npm install --no-optional'
             }
         }
-        stage('build') {
-            steps {
-                sh "npm run build"
-            }
-        }
         stage('test') {
             steps {
                 sh "npm run test"
+            }
+        }
+         stage('build') {
+            steps {
+                sh "npm run build"
             }
         }
     }
