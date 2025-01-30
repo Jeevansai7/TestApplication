@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'node:current-alpine3.20' }
+        docker { image 'node:22.13.1-alpine3.21' }
         }
     stages {
         stage('install') {
