@@ -6,7 +6,7 @@ const AddTodoOption =(props)=>{
     
     return(
         <div className='todoapp'>
-        <input type="search" ref={inputRef} onKeyDown={event=>{if(event.key==='Enter'){clickHandler(inputRef.current.value)}}}/>
+        <input type="search" ref={inputRef} onKeyDown={event=>{if(event.key=='Enter'){clickHandler(inputRef.current.value)}}}/>
         <button onClick={()=>clickHandler(inputRef.current.value)}>Add</button>
         </div>
     )
